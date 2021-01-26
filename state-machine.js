@@ -79,7 +79,7 @@ module.exports = function (RED) {
       if (statePropertyType === 'msg') {
         msg = {}
         RED.util.setMessageProperty(msg, stateProperty, node.fsm.state)
-        node.send(msg)
+        setTimeout( () => { node.send(msg); }, 100);
       }
     }
 
