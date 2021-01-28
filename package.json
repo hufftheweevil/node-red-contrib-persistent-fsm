@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-persistent-fsm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node Red node for implementing a finite state machine.",
   "dependencies": {
     "javascript-state-machine": "3.*"
