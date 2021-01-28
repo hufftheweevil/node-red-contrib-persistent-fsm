@@ -80,7 +80,7 @@ module.exports = function (RED) {
         msg = {}
         RED.util.setMessageProperty(msg, stateProperty, node.fsm.state)
         // Send preserved state delayed to give other nodes a chance to activate on flows:started
-        setTimeout( () => { node.send(msg); }, 4000)
+        setTimeout( () => { node.send(msg); }, 8000)
       }
     }
 
